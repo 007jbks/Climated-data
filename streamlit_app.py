@@ -12,7 +12,7 @@ st.title("Temperature Data Analysis")
 # reruns (e.g. if the user interacts with the widgets).
 @st.cache_data
 def load_data():
-    df = pd.read_csv("/workspaces/Climated-data/data/GlobalLandTemperaturesByCountry.csv")
+    df = pd.read_csv("data/GlobalLandTemperaturesByCountry.csv")
     df = df.dropna()
     return df
 
